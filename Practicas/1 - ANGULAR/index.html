@@ -1,14 +1,16 @@
 <!-- https://angularjs.org/ entro y elijo el CDN -->
 <!DOCTYPE html>
-<html lang="en" ng-app> <!-- Indico con ng-app que va a ser una app de ANGULARJS -->
+<html lang="es" ng-app="MiApp"> <!-- Indico con ng-app que va a ser una app de ANGULARJS -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ANGULAR JS</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script> <!-- CDN: 1.8.x(latest)-->
+    <script src="controller.js" ></script>
 </head>
-<body>
-    {{"Hola Mundo"}}
+<body ng-controller="MyController">
+    <h1><b>{{"MI PRIMER ANGULARJS"}}</b></h1>
+    <h3><b>{{"Hola "+ nombre}}</b></h3>
 </body>
 </html>
