@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="App">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="controller.js"></script>
+    <title>HTTP</title>
+</head>
+<body ng-controller="BodyController">
+    <h3>REQUEST</h3>
+    <ul>
+        <li ng-repeat="data in request.data">
+            TITULO: {{data.title}}<br>
+            INFORMACION: {{data.title}}<br><br>
+        </li>
+    </ul>
+</body>
+</html>

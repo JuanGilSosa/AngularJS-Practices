@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="App">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="controller.js"></script>
+    <title>GET</title>
+</head>
+<body ng-controller="BodyController">
+    <p>Nombre : </p><input ng-model="myPost.name" type="text">
+    <p>Email  : </p><input ng-model="myPost.email" type="text">
+    <p>Cuerpo : </p><textarea ng-model="myPost.body" cols="20" rows="1"></textarea> 
+    <button ng-model="agregarPost()">+POST</button><br>
+
+    <h2>POSTS</h2>
+    <ul>
+        <li ng-repeat="i in info.data">
+            TITULO : {{i.name}}<br>
+            EMAIL  : {{i.email}}<br>
+            CUERPO : {{i.body}}<br><br>
+        </li>
+    </ul>
+</body>
+</html>

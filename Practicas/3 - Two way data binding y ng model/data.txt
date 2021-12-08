@@ -1,0 +1,16 @@
+directiva ng-repeat="d in data" d es un objeto con informacion
+que se iterara dada la directiva ng-repeat
+
+Puedo definir atributos que estan marcados en mi vista
+
+$scope.personas = {}
+en mi html puedo hacer
+<input ng-model="personas.ATTR">
+
+ng-model es una directiva donde "accedo" a los atributos dentro de mi js
+bindea de un control a una variable de tipo scope
+
+con two war data binding lo que se hace es generar una 
+continua actualizacion de la vista y el modelo.
+Es decir, que puedo bindear desde mi vista a una variable
+de tipo scope

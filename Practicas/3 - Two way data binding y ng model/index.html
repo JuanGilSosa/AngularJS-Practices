@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="App">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="controller.js"></script>
+    <title>TWO WAY DATA BINDING</title>
+</head>
+<body ng-controller="Controller">
+    <input ng-model="nuevaPersona.nombre"   type="text" placeholder="Nombre">
+    <input ng-model="nuevaPersona.apellido" type="text" placeholder="Apellido">
+    <input ng-model="nuevaPersona.edad"     type="text" placeholder="Edad">
+    <button ng-click="agregarPersona()">Agregar</button>
+
+    <h3>PERSONAS</h3>
+    <ul>
+        <li ng-repeat="persona in arregloPersonas">
+            NOMBRE: {{persona.nombre}}  <br>
+            APELLIDO: {{persona.apellido}}<br>
+            EDAD: {{persona.edad}}
+        </li>
+    </ul>
+</body>
+</html>

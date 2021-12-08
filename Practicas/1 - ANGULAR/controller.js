@@ -1,5 +1,4 @@
-var app = angular.module("MiApp", []);
-
-app.controller("MyController", function($scope){
-    $scope.nombre = "Ariel Cervigni";
-});
+angular.module("MiApp",[])
+    .controller("controller", function ($scope) {
+       $scope.apellido = "Salamanca"; 
+    });
